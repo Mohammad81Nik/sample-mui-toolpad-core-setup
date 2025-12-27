@@ -1,0 +1,9 @@
+services:
+  web:
+    container_name: sample-toolpad-core-setup
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:80"
+    restart: unless-stopped
